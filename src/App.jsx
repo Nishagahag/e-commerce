@@ -2,8 +2,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
 import Home from "./pages/home";
 import About from "./pages/about";
-import Contact from "./pages/contact";
-import Sign from "./pages/signUp";
+
+import ContactUs from "./pages/contactUs";
+import SignUp from "./pages/signUp";
 
 function App() {
   return (
@@ -36,7 +37,7 @@ const router = createBrowserRouter([
     path: "/contact us",
     element: (
       <>
-        <Contact />
+        <ContactUs />
       </>
     ),
   },
@@ -44,7 +45,7 @@ const router = createBrowserRouter([
     path: "/sign up",
     element: (
       <>
-        <Sign />
+        <SignUp />
       </>
     ),
   },

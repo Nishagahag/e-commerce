@@ -1,8 +1,8 @@
-const SignUp = () => {
+const Footer = () => {
   return (
     <>
       <div></div>
     </>
   );
 };
-export default SignUp;
+export default Footer;
