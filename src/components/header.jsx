@@ -1,11 +1,17 @@
+import { IoIosArrowDown } from "react-icons/io";
+
 const Header = () => {
   return (
     <>
-      <div className=" bg-black text-white grid grid-cols-2 p-4 justify-items-center">
-        <div className="">
-          Summer Sale For All Swim Suits And express Delivery-OFF 50%! ShopNow
+      <div className=" bg-black text-white flex justify-evenly p-4 ">
+        <div className="flex gap-2">
+          Summer Sale For All Swim Suits And express Delivery-OFF 50%!
+          <p className="underline font-semibold">ShopNow</p>
         </div>
-        <div>English</div>
+        <div className="flex gap-2">
+          English
+          <IoIosArrowDown className="size-6" />
+        </div>
       </div>
     </>
   );
