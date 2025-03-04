@@ -1,8 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { IoIosHeartEmpty } from "react-icons/io";
-import { IoCartOutline } from "react-icons/io5";
-import { IoSearchOutline } from "react-icons/io5";
-// import { Field } from "formik";
+
 const Navbar = () => {
   return (
     <>
@@ -18,19 +15,19 @@ const Navbar = () => {
             <NavLink to="/sign up">Sign Up</NavLink>
           </section>
           <section className="flex justify-center gap-3 ">
-            <NavLink to="search" className={"flex"}>
+            <NavLink to="search" className="flex">
               <input
                 type="text"
-                placeholder="what do you need?"
+                placeholder="what are you loooking ?"
                 name="search"
               />
-              <IoSearchOutline className="text-2xl" />
+              <img src="search.svg" className="w-10 h-7" />
             </NavLink>
-            <NavLink to="/like">
-              <IoIosHeartEmpty className="text-3xl" />
+            <NavLink to="/heart">
+              <img src="heart.svg" className="w-10 h-7" />
             </NavLink>
             <NavLink to="/cart">
-              <IoCartOutline className="text-3xl" />
+              <img src="cart.svg" className="w-10 h-7" />
             </NavLink>
           </section>
         </nav>

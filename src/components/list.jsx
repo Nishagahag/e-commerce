@@ -1,25 +1,36 @@
-import { MdOutlineArrowForwardIos } from "react-icons/md";
+import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import { NavLink } from "react-router-dom";
 
 const List = () => {
   return (
     <>
-      <div className="justify-items-center p-10 text-2xl ">
-        <section>
-          <div className="flex  ">
-            <div>Women</div>
-            <MdOutlineArrowForwardIos />
+      <div className=" p-7 text-xl">
+        <section className="">
+          <div className="flex mb-3">
+            <h1>Women Clothes</h1>
+            <p className="p-2">
+              <NavLink to="/women">
+                <MdOutlineKeyboardArrowRight />
+              </NavLink>
+            </p>
           </div>
-          <div className="flex">
-            <div>Men</div>
-            <MdOutlineArrowForwardIos />
+          <div className="flex mb-3">
+            <h1>Men Clothes</h1>
+            <p className="p-2">
+              <NavLink to="/men">
+                <MdOutlineKeyboardArrowRight />
+              </NavLink>
+            </p>
           </div>
-          <div>Electronics</div>
-          <div>Home</div>
-          <div>Medicine</div>
-          <div>Sports</div>
-          <div>Baby</div>
-          <div>Grocery</div>
-          <div>Health</div>
+          <div className="mb-3">Electronics</div>
+          <div className="mb-3">Home</div>
+          <div className="mb-3">Home</div>
+          <div className="mb-3">Home</div>
+          <div className="mb-3">Medicine</div>
+          <div className="mb-3">Sports</div>
+          <div className="mb-3">Baby</div>
+          <div className="mb-3">Grocery</div>
+          <div className="mb-3">Health</div>
         </section>
       </div>
     </>
