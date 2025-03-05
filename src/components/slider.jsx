@@ -16,7 +16,7 @@ const Carousel = () => {
   return (
     <>
       <div className="grid grid-cols-2 mt-10">
-        <section className="bg-black text-white">
+        <section className="bg-black text-white ">
           <div className="slider-container">
             <Slider {...settings}>
               <div className="mt-20 ml-15">
