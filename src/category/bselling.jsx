@@ -1,0 +1,83 @@
+import Card from "../components/card";
+
+const Product = () => {
+  return (
+    <>
+      <div className="container mx-auto">
+        <div>
+          <div className="flex gap-2 mt-8">
+            <p className="bg-red-500 w-5 h-10 rounded-sm p-2 "></p>
+            <p className="p-2 text-xl text-red-500 font-semibold">This Month</p>
+          </div>
+        </div>
+        <div className="flex flex-row justify-between">
+          <div>
+            <h1 className="font-semibold text-3xl">Best Selling Products</h1>
+          </div>
+          <div>
+            <button
+              onClick=""
+              className="bg-red-500 rounded-sm p-2 text-white "
+            >
+              View All
+            </button>
+          </div>
+        </div>
+        <div className="container mx-auto flex flex-row gap-12">
+          {Products.map((product) => {
+            return (
+              <>
+                <Card
+                  key={product.id}
+                  image={product.image}
+                  title={product.title}
+                  price={product.price}
+                  prices={product.prices}
+                  review={product.review}
+                />
+              </>
+            );
+          })}
+        </div>
+      </div>
+      <div className="p-4"></div>
+    </>
+  );
+};
+export default Product;
+const Products = [
+  {
+    id: "1",
+    button: "30%",
+    image: "Gamepad.png",
+    title: "HAVIT HV-G96 Gamepad",
+    price: "$ 120",
+    prices: "$ 160",
+    review: "***",
+  },
+  {
+    id: "2",
+    image: "Keyboard.png",
+    title: "AK-900 Wired Keyboard",
+    price: "$ 960",
+    prices: "$ 1160",
+    review: "***",
+  },
+  {
+    id: "3",
+    image: "Monitor.png",
+    title: "IPS LCD Gaming Monitor",
+    price: "$ 370",
+    prices: "$ 400",
+    review: "***",
+  },
+  {
+    id: "4",
+    image: "Chair.png",
+    title: "ONEX STC Compact S Series Fabric Gaming",
+    price: "$ 375",
+    prices: "$ 400",
+    review: "***",
+  },
+];
+export { Products };

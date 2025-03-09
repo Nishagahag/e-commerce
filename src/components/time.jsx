@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Card from "./card";
+import Slider from "react-slick";
 
 const TimeDisplay = () => {
   const [time, setTime] = useState({
@@ -9,6 +10,15 @@ const TimeDisplay = () => {
     second: 0,
   });
 
+  const settings = {
+    dots: false,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    pauseOnHover: true,
+  };
   useEffect(() => {
     const updateTime = () => {
       const now = new Date();
@@ -38,36 +48,68 @@ const TimeDisplay = () => {
         </div>
         <div className="flex gap-12 font-semibold text-3xl">
           <h1>Flash Sales</h1>
-          <div>
-            <p className="font-normal text-xl">Days Hours Minutes Seconds</p>
-            <p>
-              {time.day}:{time.hour}:{time.minute}:{time.second}
-            </p>
+          <div className="font-normal text-sm">
+            <div className="flex flex-row gap-4">
+              <div>
+                Days
+                <div className="flex flex-row gap-8 font-bold">
+                  <p className="text-3xl"> {time.day}</p>
+                  <p className="text-2xl text-red-400 ">:</p>
+                </div>
+              </div>
+              <div>
+                Hours
+                <div className="flex flex-row gap-8 font-bold">
+                  <p className="text-3xl"> {time.hour}</p>
+                  <p className="text-2xl text-red-400 ">:</p>
+                </div>
+              </div>
+              <div>
+                Minutes
+                <div className="flex flex-row gap-8 font-bold">
+                  <p className="text-3xl"> {time.minute}</p>
+                  <p className="text-2xl text-red-400 ">:</p>
+                </div>
+              </div>
+              <div>
+                Seconds
+                <div>
+                  <p className="text-3xl font-bold"> {time.second}</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div className="grid grid-cols-4 container">
+
+        {/* <div className=""> */}
+        <Slider {...settings}>
           {Products.map((product) => {
             return (
-              <Card
-                key={product.id}
-                image={product.image}
-                title={product.title}
-                price={product.price}
-                prices={product.prices}
-                review={product.review}
-              />
+              <>
+                <Card
+                  key={product.id}
+                  image={product.image}
+                  title={product.title}
+                  price={product.price}
+                  prices={product.prices}
+                  review={product.review}
+                />
+              </>
             );
           })}
-        </div>
+        </Slider>
+        {/* </div> */}
+
         <div>
           <button
             onClick=""
-            className="text-2xl bg-red-500 text-white p-4 mt-4 ml-140 "
+            className="text-2xl bg-red-500 text-white p-4 mt-4 ml-140 rounded-sm "
           >
             View all products
           </button>
         </div>
       </div>
+      <div className=" container  mx-auto border-b-2 p-4"></div>
     </>
   );
 };

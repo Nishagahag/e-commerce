@@ -1,4 +1,8 @@
-import Card from "../components/card";
+import Browse from "../category/browse";
+import Product from "../category/bselling";
+import Explore from "../category/explore";
+import NewArrival from "../category/newArrival";
+import Carousel2, { Time } from "../category/slider2";
 import Footer from "../components/footer";
 import Header from "../components/header";
 import List from "../components/list";
@@ -18,7 +22,12 @@ const Home = () => {
             <Carousel />
           </div>
           <TimeDisplay />
-
+          <Browse />
+          <Product />
+          <Time />
+          <Carousel2 />
+          <Explore />
+          <NewArrival />
           <Footer />
         </div>
       </div>

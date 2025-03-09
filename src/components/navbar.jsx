@@ -25,6 +25,7 @@ const Navbar = () => {
                   type="text"
                   placeholder="what are you loooking ?"
                   name="search"
+                  className="outline-0"
                 />
                 <img src="search.svg" className="w-10 h-7" />
               </div>

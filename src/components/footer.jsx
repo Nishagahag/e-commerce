@@ -15,7 +15,8 @@ const Footer = () => {
                 type="email"
                 placeholder="Enter your email"
                 name="email"
-                className="p-3"
+                // className="p-3"
+                className="outline-0 p-3"
               />
               <img src="send.svg" alt="" className="h-15 w-10 p-2" />
             </div>
