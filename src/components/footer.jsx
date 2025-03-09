@@ -10,13 +10,14 @@ const Footer = () => {
             <br />
             <h1>get 10% off your first order</h1>
             <br />
-            <div className=" flex container">
+            <div className=" flex border-2 p-0 rounded-xl gap-2 ">
               <input
                 type="email"
                 placeholder="Enter your email"
                 name="email"
                 className="p-3"
               />
+              <img src="send.svg" alt="" className="h-15 w-10 p-2" />
             </div>
           </div>
         </div>
