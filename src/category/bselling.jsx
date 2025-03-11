@@ -53,7 +53,7 @@ const Products = [
     title: "The North Face North Down Hooded Jacket",
     price: "$ 140",
     prices: "$ 220",
-    review: "***",
+    review: " ",
   },
   {
     id: "2",
@@ -61,7 +61,7 @@ const Products = [
     title: "Gucci Savoy Medium Duffle Bag",
     price: "$ 2,750",
     prices: "$ 2,980 ",
-    review: "***",
+    review: " ",
   },
   {
     id: "3",
@@ -69,7 +69,7 @@ const Products = [
     title: "Aorus Liquid Cooler",
     price: "$97",
     prices: "$115",
-    review: "***",
+    review: " ",
   },
   {
     id: "4",
@@ -77,7 +77,7 @@ const Products = [
     title: "Wood Desktop Shelf Small Bookshelf ",
     price: "$30",
     prices: "$60",
-    review: "***",
+    review: " ",
   },
 ];
 export { Products };

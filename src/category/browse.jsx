@@ -50,7 +50,7 @@ const Browse = () => {
           </div>
         </div>
       </div>
-      <div className=" container  mx-auto border-b-2 p-4"></div>
+      <div className=" container mx-auto border-b-2 p-4"></div>
     </>
   );
 };

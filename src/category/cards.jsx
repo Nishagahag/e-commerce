@@ -1,3 +1,5 @@
+import StarRating from "../components/starRate";
+
 const Card2 = (prop) => {
   return (
     <>
@@ -24,7 +26,10 @@ const Card2 = (prop) => {
               <p className="text-red-500">{prop.price}</p>
               <p className="line-through">{prop.prices}</p>
             </div>
-            <h1 className="">{prop.review}</h1>
+            <div className="flex flex-row gap-2">
+              <h1 className="">{prop.review}</h1>
+              <StarRating />
+            </div>
           </div>
         </div>
       </div>

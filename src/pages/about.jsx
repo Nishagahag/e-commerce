@@ -1,6 +1,7 @@
 import Footer from "../components/footer";
 import Header from "../components/header";
 import Navbar from "../components/navbar";
+import StarRating from "../components/starRate";
 
 const About = () => {
   return (
@@ -8,6 +9,7 @@ const About = () => {
       <div>
         <Header />
         <Navbar />
+     
         <Footer />
       </div>
     </>

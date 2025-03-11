@@ -82,7 +82,7 @@ const TimeDisplay = () => {
         </div>
 
         {/* <div className=""> */}
-        
+
         <Slider {...settings}>
           {Products.map((product) => {
             return (
@@ -124,7 +124,7 @@ const Products = [
     title: "HAVIT HV-G96 Gamepad",
     price: "$ 120",
     prices: "$ 160",
-    review: "***",
+    review: "",
   },
   {
     id: "2",
@@ -132,7 +132,7 @@ const Products = [
     title: "AK-900 Wired Keyboard",
     price: "$ 960",
     prices: "$ 1160",
-    review: "***",
+    review: "",
   },
   {
     id: "3",
@@ -140,7 +140,7 @@ const Products = [
     title: "IPS LCD Gaming Monitor",
     price: "$ 370",
     prices: "$ 400",
-    review: "***",
+    review: "",
   },
   {
     id: "4",
@@ -148,7 +148,7 @@ const Products = [
     title: "ONEX STC Compact S Series Fabric Gaming",
     price: "$ 375",
     prices: "$ 400",
-    review: "***",
+    review: "",
   },
 ];
 export { Products };

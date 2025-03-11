@@ -1,3 +1,7 @@
+import { TfiHeadphoneAlt } from "react-icons/tfi";
+import { TbTruckDelivery } from "react-icons/tb";
+import { AiOutlineSafetyCertificate } from "react-icons/ai";
+
 const NewArrival = () => {
   return (
     <>
@@ -12,11 +16,17 @@ const NewArrival = () => {
           <h1>New Arrival</h1>
         </div>
         <br />
-
-        <div></div>
-        <button onClick="" className="text-2xl bg-red-500 text-white p-4 ">
-          View all products
-        </button>
+        <div className="flex flex-row">
+          <img src="ps5.jpg" />
+          <img src="woman.jpg" />
+          <img src="" />
+        </div>
+        <br />
+        <div className=" flex flex-row justify-evenly">
+          <TbTruckDelivery className="h-10 w-12 bg-black text-white rounded-full" />
+          <TfiHeadphoneAlt className="h-10 w-12 bg-black text-white rounded-full" />
+          <AiOutlineSafetyCertificate className="h-10 w-12 bg-black text-white rounded-full" />
+        </div>
       </div>
     </>
   );
