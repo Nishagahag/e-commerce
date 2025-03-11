@@ -1,4 +1,4 @@
-import Slider from "react-slick";
+
 
 const Card = (prop) => {
   
@@ -6,7 +6,7 @@ const Card = (prop) => {
     <>
       <div className=" gap-10 m-2">
         <div className="p-4 text-xl mt-4">
-         
+  
             <div className="container bg-slate-200 w-fit ">
               <button
                 onClick=""

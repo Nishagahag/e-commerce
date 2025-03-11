@@ -1,4 +1,4 @@
-import Card from "../components/card";
+import Card2 from "./cards";
 
 const Explore = () => {
   return (
@@ -20,7 +20,7 @@ const Explore = () => {
           {Products.map((product) => {
             return (
               <>
-                <Card
+                <Card2
                   key={product.id}
                   image={product.image}
                   title={product.title}

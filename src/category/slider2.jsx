@@ -1,5 +1,6 @@
-import { useEffect, useState } from "react";
 import Slider from "react-slick";
+import { useEffect, useState } from "react";
+import TimeShow from "./timeShow";
 
 const Carousel2 = () => {
   const settings = {
@@ -27,6 +28,10 @@ const Carousel2 = () => {
                     Enchance Your
                     <p>Music Experience</p>
                   </h1>
+                </div>
+                <br />
+                <div>
+                  <TimeShow />
                 </div>
                 <br />
                 <button

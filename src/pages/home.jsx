@@ -1,5 +1,6 @@
 import Browse from "../category/browse";
 import Product from "../category/bselling";
+import Card2 from "../category/cards";
 import Explore from "../category/explore";
 import NewArrival from "../category/newArrival";
 import Carousel2, { Time } from "../category/slider2";
@@ -24,7 +25,7 @@ const Home = () => {
           <TimeDisplay />
           <Browse />
           <Product />
-          <Time />
+
           <Carousel2 />
           <Explore />
           <NewArrival />

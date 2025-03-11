@@ -1,3 +1,10 @@
+import { IoGameControllerOutline } from "react-icons/io5";
+import { SlScreenSmartphone } from "react-icons/sl";
+import { TfiHeadphone } from "react-icons/tfi";
+import { BsSmartwatch } from "react-icons/bs";
+import { IoCameraOutline } from "react-icons/io5";
+import { HiOutlineDesktopComputer } from "react-icons/hi";
+
 const Browse = () => {
   return (
     <>
@@ -14,31 +21,31 @@ const Browse = () => {
         <br />
         <div className="container flex flex-row gap-8 ">
           <div className="border-2 p-12">
-            <img src="phone.svg" className="h-12 w-15" />
+            <SlScreenSmartphone className="h-12 w-15" />
             <p>Phones</p>
           </div>
 
           <div className="border-2 p-12">
-            <img src="computer.svg" className="h-12 w-15" />
+            <HiOutlineDesktopComputer className="h-12 w-15" />
             <p>Computer</p>
           </div>
 
           <div className="border-2 p-12">
-            <img src="smartwatch.svg" className="h-12 w-15" />
+            <BsSmartwatch className="h-12 w-15" />
             <p>SmartWatch</p>
           </div>
 
           <div className="border-2 p-12">
-            <img src="camera.svg" className="h-12 w-15" />
+            <IoCameraOutline className="h-12 w-15" />
             <p>Camera</p>
           </div>
 
           <div className="border-2 p-12">
-            <img src="headphone.svg" className="h-12 w-15" />
+            <TfiHeadphone className="h-12 w-15" />
             <p>Headphones</p>
           </div>
           <div className="border-2 p-12">
-            <img src="gaming.svg" className="h-12 w-15" />
+            <IoGameControllerOutline className="h-12 w-15" />
             <p>Gaming</p>
           </div>
         </div>

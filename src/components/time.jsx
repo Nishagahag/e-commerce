@@ -82,6 +82,7 @@ const TimeDisplay = () => {
         </div>
 
         {/* <div className=""> */}
+        
         <Slider {...settings}>
           {Products.map((product) => {
             return (
